@@ -11,9 +11,6 @@ h2 {
     color: teal;
 }
 
-li {
-    margin-bottom: 4px;
-}
 
 ul {
     color: rgb(241, 16, 16);
@@ -41,4 +38,8 @@ li {
 
 #race-vedette {
     color: purple;
+}
+
+#Abyssin {
+    color: goldenrod;
 }
