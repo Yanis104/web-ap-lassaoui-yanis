@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    color: darkslategray;
+}
+
+h1 {
+    color: steelblue;
+}
+
+h2 {
+    color: teal;
+}
+
+
+ul {
+    color: rgb(241, 16, 16);
+}
+
+li:hover {
+    background-color: lightblue;
+    color: red;
+    cursor: pointer;
+}
+
+body {
+    background-color: rgb(167, 214, 167);
+}
+
+.recommandee {
+    font-weight: bold;
+    color: seagreen;
+}
+
+li {
+    margin-bottom: 4px;
+    color: black;
+}
+
+#race-vedette {
+    color: purple;
+}
+
+#Abyssin {
+    color: goldenrod;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+nav a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: darkslategray;
+}
+
+nav a:hover {
+    color: seagreen;
+    text-decoration: underline;
+}
+
+figure {
+    border: 2px solid rgb(19, 231, 238);
+    padding: 8px;
+    margin: 16px 0;
+    width: 300px;
+    background-color: aliceblue;
+    box-shadow: 10px 5px 5px rgb(84, 237, 248);
+
+}
+
+img {
+    width: 300px;
+
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 4px;
+
+
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid rgb(255, 233, 36);
+    padding: 6px;
+    text-align: left;
+    vertical-align: top;
+}
+
+thead {
+    background-color: rgb(227, 241, 30);
+    color: rgb(0, 0, 0);
+}
+
+tbody tr:nth-child(even) {
+    background-color: whitesmoke;
+}
