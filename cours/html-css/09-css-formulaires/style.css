@@ -109,7 +109,7 @@ thead {
 }
 
 tbody tr:nth-child(even) {
-    background-color: whitesmoke;
+    background-color: aqua;
 }
 
 input,
@@ -124,12 +124,16 @@ select:focus,
 textarea:focus {
     outline: 2px solid steelblue;
     outline-offset: 1px;
+    background-color: aqua;
+
 }
 
 input:valid {
     border-color: seagreen;
+    background-color: rgb(224, 245, 245);
 }
 
 input:invalid {
     border-color: crimson;
+    background-color: rgb(242, 247, 247);
 }
