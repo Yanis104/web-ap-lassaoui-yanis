@@ -1,0 +1,70 @@
+/* VOICE: un ado de 2004 qui vient de découvrir le HTML et qui est TROP hype
+   IDEA: une page perso Multimania / Skyblog, faite dans le Bloc-notes
+   PICTURE: un gros titre "WordArt" GTA VI avec coucher de soleil de Vice City en dégradé
+   COLOUR and TYPE: fond étoilé rose/cyan, jaune fluo, Comic Sans + Times + Impact
+   LAYOUT: tableau 3 colonnes à bordures 3D, menu à gauche, compteur, livre d'or */
+:root{color-scheme:light}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;overflow-x:clip;font:16px/1.4 "Comic Sans MS","Comic Sans","Chalkboard SE","Comic Neue",cursive;color:#000;
+  background-color:#1a0033;
+  background-image:radial-gradient(#fff 1px,transparent 1.5px),radial-gradient(#ff4fd8 1px,transparent 1.5px);
+  background-size:38px 38px,61px 61px;background-position:0 0,19px 27px;
+  cursor:crosshair}
+a{color:#0000ee;font-weight:bold}a:visited{color:#551a8b}a:hover{color:red;background:yellow}
+.wrap{max-width:980px;margin:0 auto;padding:8px}
+.bandeau{background:#ffff00;border:3px ridge #ff00ff;font:bold 15px Arial,sans-serif;color:red;overflow:hidden;white-space:nowrap}
+.bandeau span{display:inline-block;padding-left:100%;animation:defil 18s linear infinite}
+@keyframes defil{to{transform:translateX(-100%)}}
+.blink{animation:clig 1s steps(1) infinite}@keyframes clig{50%{visibility:hidden}}
+.titre{text-align:center;margin:14px 0 4px;padding:18px 6px 10px;border:5px outset #00ffff;
+  background:linear-gradient(#ff5fa2 0%,#ff9a3c 45%,#ffd84a 60%,#14b8c7 61%,#0a4d8c 100%)}
+.titre h1{margin:0;font:italic 900 clamp(54px,14vw,128px)/0.95 Impact,"Arial Black",sans-serif;
+  letter-spacing:2px;color:#ffe600;-webkit-text-stroke:3px #c2006b;
+  text-shadow:4px 4px 0 #6a00ff,8px 8px 0 #000;transform:skew(-8deg) rotate(-3deg)}
+.titre p{margin:8px 0 0;font:bold 20px "Times New Roman",serif;color:#fff;text-shadow:2px 2px #000}
+.palmiers{display:block;margin:-6px auto 0;width:100%;max-width:520px;height:70px}
+.grille{display:grid;grid-template-columns:200px minmax(0,1fr) 200px;gap:8px;margin-top:8px}
+.boite{background:#c0c0c0;border:4px outset #fff;padding:8px}
+.boite h2{margin:-8px -8px 8px;padding:3px 6px;font:bold 15px Tahoma,Verdana,sans-serif;color:#fff;background:linear-gradient(90deg,#000080,#1084d0)}
+.menu a{display:block;padding:6px 4px;margin:3px 0;background:#fff;border:2px outset #ddd;text-decoration:none;font-size:15px}
+.menu a:active{border-style:inset}
+.centre{background:#fff;border:6px double #ff00ff;padding:12px 16px}
+.centre h3{font:bold 26px "Times New Roman",serif;color:#c2006b;text-decoration:underline;margin:18px 0 6px;text-align:center}
+.centre h3:first-child{margin-top:0}
+.centre p{margin:8px 0}
+.rouge{color:red;font-weight:bold}.vert{color:#008000;font-weight:bold}.bleu{color:#0000cc;font-weight:bold}
+.gros{font-size:22px}
+hr{border:0;height:6px;background:repeating-linear-gradient(90deg,red 0 20px,#ff0 20px 40px,lime 40px 60px,cyan 60px 80px,#f0f 80px 100px);margin:16px 0}
+table.infos{width:100%;border:3px solid #000;border-collapse:separate;background:#ffffcc;font-size:15px}
+table.infos td{border:2px inset #999;padding:6px}
+table.infos td:first-child{background:#ccffff;font-weight:bold;width:40%}
+.perso{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.carte{border:3px dashed #0000cc;padding:8px;text-align:center;background:#eef}
+.carte svg{width:100%;height:110px;display:block;background:#ffd6f0;border:2px solid #000}
+.carte b{display:block;font-size:20px;margin-top:4px}
+.travaux{background:repeating-linear-gradient(45deg,#ffcc00 0 16px,#000 16px 32px);padding:6px;margin:14px 0}
+.travaux div{background:#ffcc00;text-align:center;font:bold 16px Arial,sans-serif;padding:6px}
+.compteur{text-align:center;font-size:13px}
+.chiffres{display:inline-flex;gap:2px;margin:4px 0;background:#000;padding:3px;border:2px inset #888}
+.chiffres span{background:#111;color:#39ff14;font:bold 20px "Courier New",monospace;padding:0 4px;border:1px solid #333}
+.compte{font:bold 26px "Courier New",monospace;color:#ff0;background:#000;padding:6px;text-align:center;border:3px inset #888}
+.droite p{font-size:14px;margin:6px 0}
+.sondage label{display:block;font-size:14px;margin:4px 0;cursor:pointer}
+button{font:bold 15px "Comic Sans MS",cursive;background:#c0c0c0;border:3px outset #fff;padding:6px 12px;min-height:40px;cursor:pointer}
+button:active{border-style:inset}
+button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px dotted #f0f;outline-offset:2px}
+.res{font-size:13px;margin-top:6px}
+.barre{height:14px;background:#fff;border:1px solid #000;margin:2px 0 6px}
+.barre i{display:block;height:100%;background:linear-gradient(90deg,red,#ff0)}
+.livre input,.livre textarea{width:100%;font:16px "Comic Sans MS",cursive;border:2px inset #999;padding:4px;margin:3px 0}
+.messages{margin-top:10px;max-height:260px;overflow:auto}
+.msg{border:2px solid #000;background:#ffffe0;padding:6px;margin:6px 0;font-size:14px;overflow-wrap:anywhere}
+.msg b{color:#c2006b}
+.pied{text-align:center;color:#fff;font-size:13px;margin:14px 0 30px;text-shadow:1px 1px #000}
+.pied .badge{display:inline-block;margin:4px;padding:2px 6px;font:bold 11px Verdana,sans-serif;border:2px outset #fff;background:#000080;color:#fff}
+.pied .badge.v{background:#008000}.pied .badge.o{background:#ff6600}
+.etoile{position:fixed;pointer-events:none;color:#ff0;font-size:16px;animation:tombe .8s linear forwards;z-index:9}
+@keyframes tombe{to{transform:translateY(30px);opacity:0}}
+@media(max-width:820px){.grille{grid-template-columns:minmax(0,1fr)}.menu{display:flex;flex-wrap:wrap;gap:4px}.menu h2{flex-basis:100%}.menu a{flex:1 1 40%;margin:0}}
+@media(max-width:520px){.perso{grid-template-columns:1fr}.centre{padding:10px}}
+@media(prefers-reduced-motion:reduce){.bandeau span,.blink{animation:none}.bandeau span{padding-left:0}.etoile{display:none}}
